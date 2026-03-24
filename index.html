@@ -1,257 +1,206 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Fairgrounds — Nantucket Island</title>
-  <meta name="description" content="The Fairgrounds — Restaurant, Events & Community on Nantucket Island. 27 Fairgrounds Road.">
-  <meta property="og:title" content="The Fairgrounds — Nantucket Island">
-  <meta property="og:description" content="Restaurant, Events & Community. 27 Fairgrounds Road, Nantucket.">
-  <meta property="og:image" content="https://www.nantucketfairgrounds.com/maplefest-2026.png">
-  <meta property="og:url" content="https://www.nantucketfairgrounds.com">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" type="image/png" href="logo.png">
-  <style>
-    @font-face {
-      font-family: 'BogueSlab';
-      src: url('BogueSlab.otf') format('opentype');
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'ZebrawoodFill';
-      src: url('ZebrawoodFill.otf') format('opentype');
-      font-display: swap;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Faregrounds | Nantucket Island Restaurant, Events & Community</title>
+    <meta name="description" content="Seasonal food, local gatherings, and fairground energy on Nantucket Island. Comfort food, live music, community events, and old-school island charm at 27 Fairgrounds Road." />
+    <meta name="keywords" content="Nantucket restaurant, Nantucket Island dining, Faregrounds, seasonal menu, live music Nantucket, community events, Nantucket food, island dining, Fairgrounds Road" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://fairgroundsnantucket.com/" />
+    <link rel="icon" type="image/png" href="/images/whale.png" />
+    <meta name="theme-color" content="#4e5420" />
 
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    <!-- Open Graph -->
+    <meta property="og:type" content="restaurant" />
+    <meta property="og:title" content="The Faregrounds | Nantucket Island" />
+    <meta property="og:description" content="Seasonal food, local gatherings, and fairground energy. Comfort food, live music, community events at 27 Fairgrounds Road, Nantucket." />
+    <meta property="og:url" content="https://fairgroundsnantucket.com/" />
+    <meta property="og:image" content="https://fairgroundsnantucket.com/images/logo.png" />
+    <meta property="og:site_name" content="The Faregrounds" />
+    <meta property="og:locale" content="en_US" />
 
-    :root {
-      --cream: #efe1ab;
-      --parchment: #f6edc8;
-      --warm-white: #fff7e4;
-      --olive: #4e5420;
-      --olive-mid: #7a7e2e;
-      --gold: #c79b34;
-      --gold-light: #d4af5a;
-      --orange: #d96a1f;
-      --ink: #161616;
-      --body: #3d3d3d;
-      --muted: #6a6a6a;
-    }
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Faregrounds | Nantucket Island" />
+    <meta name="twitter:description" content="Seasonal food, local gatherings, and fairground energy. Comfort food, live music, community events at 27 Fairgrounds Road, Nantucket." />
+    <meta name="twitter:image" content="https://fairgroundsnantucket.com/images/logo.png" />
 
-    body {
-      font-family: 'BogusSlab', Georgia, 'Times New Roman', serif;
-      background: var(--warm-white);
-      color: var(--body);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="US-MA" />
+    <meta name="geo.placename" content="Nantucket" />
+    <meta name="geo.position" content="41.265267;-70.087760" />
+    <meta name="ICBM" content="41.265267, -70.087760" />
 
-    .page {
-      width: 100%;
-      max-width: 640px;
-      padding: 40px 20px 60px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 32px;
+    <!-- JSON-LD: Restaurant -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "The Faregrounds",
+      "description": "Seasonal food, local gatherings, and fairground energy on Nantucket Island. Comfort food, live music, community events, and old-school island charm.",
+      "url": "https://fairgroundsnantucket.com/",
+      "telephone": "(508) 555-FARE",
+      "image": "https://fairgroundsnantucket.com/images/logo.png",
+      "logo": "https://fairgroundsnantucket.com/images/logo.png",
+      "servesCuisine": ["American", "Comfort Food", "Seasonal"],
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "27 Fairgrounds Road",
+        "addressLocality": "Nantucket",
+        "addressRegion": "MA",
+        "postalCode": "02554",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.265267,
+        "longitude": -70.087760
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+          "opens": "08:00",
+          "closes": "15:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday", "Saturday", "Sunday"],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      ],
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Lunch Menu",
+        "url": "https://fairgroundsnantucket.com/#menu"
+      },
+      "acceptsReservations": true,
+      "sameAs": []
     }
+    </script>
 
-    /* Logo */
-    .logo-wrap {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-    }
-    .logo-wrap img {
-      width: 80px;
-      height: auto;
-      filter: drop-shadow(0 2px 8px rgba(78, 84, 32, 0.15));
-    }
-    .site-name {
-      font-family: 'ZebrawoodFill', 'BogueSlab', serif;
-      font-size: clamp(28px, 5vw, 38px);
-      color: var(--olive);
-      letter-spacing: 0.04em;
-      text-align: center;
-      line-height: 1.1;
-    }
-    .site-sub {
-      font-family: 'BogueSlab', serif;
-      font-size: 11px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--olive-mid);
-      text-align: center;
-    }
+    <!-- JSON-LD: Events -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Maple Fest Weekend",
+        "description": "Sugar on snow, live bluegrass, family-friendly fun, and maple treats all afternoon.",
+        "startDate": "2025-03-28",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "The Faregrounds",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "27 Fairgrounds Road",
+            "addressLocality": "Nantucket",
+            "addressRegion": "MA",
+            "postalCode": "02554"
+          }
+        },
+        "organizer": {
+          "@type": "Restaurant",
+          "name": "The Faregrounds",
+          "url": "https://fairgroundsnantucket.com/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Bluegrass on the Lawn",
+        "description": "An easygoing early-evening set with local players and picnic-style seating.",
+        "startDate": "2025-04-12",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "The Faregrounds",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "27 Fairgrounds Road",
+            "addressLocality": "Nantucket",
+            "addressRegion": "MA",
+            "postalCode": "02554"
+          }
+        },
+        "organizer": {
+          "@type": "Restaurant",
+          "name": "The Faregrounds",
+          "url": "https://fairgroundsnantucket.com/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Kids Craft Brunch",
+        "description": "Weekend brunch with hands-on activities, balloons, and seasonal treats for the little ones.",
+        "startDate": "2025-04-19",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "The Faregrounds",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "27 Fairgrounds Road",
+            "addressLocality": "Nantucket",
+            "addressRegion": "MA",
+            "postalCode": "02554"
+          }
+        },
+        "organizer": {
+          "@type": "Restaurant",
+          "name": "The Faregrounds",
+          "url": "https://fairgroundsnantucket.com/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Island Supper Club",
+        "description": "A five-course prix fixe dinner celebrating Nantucket's spring harvest.",
+        "startDate": "2025-05-03",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "The Faregrounds",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "27 Fairgrounds Road",
+            "addressLocality": "Nantucket",
+            "addressRegion": "MA",
+            "postalCode": "02554"
+          }
+        },
+        "organizer": {
+          "@type": "Restaurant",
+          "name": "The Faregrounds",
+          "url": "https://fairgroundsnantucket.com/"
+        }
+      }
+    ]
+    </script>
 
-    /* Flyer */
-    .flyer-frame {
-      width: 100%;
-      border-radius: 16px;
-      overflow: hidden;
-      border: 3px solid var(--olive);
-      box-shadow:
-        0 4px 24px rgba(78, 84, 32, 0.12),
-        0 1px 4px rgba(0,0,0,0.06);
-      background: var(--parchment);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    <!-- JSON-LD: WebSite (for sitelinks search box) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "The Faregrounds",
+      "url": "https://fairgroundsnantucket.com/",
+      "description": "Nantucket Island restaurant featuring seasonal comfort food, live music, and community events."
     }
-    .flyer-frame:hover {
-      transform: translateY(-2px);
-      box-shadow:
-        0 8px 32px rgba(78, 84, 32, 0.18),
-        0 2px 8px rgba(0,0,0,0.08);
-    }
-    .flyer-frame img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    /* Info bar */
-    .info-bar {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 6px 16px;
-      font-family: 'BogueSlab', serif;
-      font-size: 11px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--olive-mid);
-    }
-    .info-bar .dot {
-      color: var(--gold);
-    }
-
-    /* CTA */
-    .cta-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-    }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 28px;
-      border-radius: 999px;
-      font-family: 'BogueSlab', serif;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      text-decoration: none;
-      cursor: pointer;
-      border: 2px solid transparent;
-      transition: all 0.25s ease;
-    }
-    .btn-primary {
-      background: var(--olive);
-      color: var(--warm-white);
-      border-color: var(--olive);
-    }
-    .btn-primary:hover {
-      background: var(--olive-mid);
-      border-color: var(--olive-mid);
-      transform: translateY(-1px);
-    }
-    .btn-outline {
-      background: transparent;
-      color: var(--olive);
-      border-color: var(--olive);
-    }
-    .btn-outline:hover {
-      background: var(--olive);
-      color: var(--warm-white);
-      transform: translateY(-1px);
-    }
-
-    /* Footer */
-    .footer {
-      margin-top: 8px;
-      text-align: center;
-      font-size: 12px;
-      color: var(--muted);
-      line-height: 1.7;
-    }
-    .footer a {
-      color: var(--olive-mid);
-      text-decoration: none;
-    }
-    .footer a:hover {
-      color: var(--olive);
-      text-decoration: underline;
-    }
-
-    /* Swash divider */
-    .swash {
-      width: 120px;
-      height: 12px;
-      opacity: 0.35;
-    }
-
-    @media (max-width: 480px) {
-      .page { padding: 28px 16px 48px; gap: 24px; }
-      .cta-row { flex-direction: column; width: 100%; }
-      .btn { width: 100%; justify-content: center; }
-    }
-  </style>
-</head>
-<body>
-
-  <div class="page">
-
-    <div class="logo-wrap">
-      <img src="logo.png" alt="The Fairgrounds logo" width="80" height="95">
-      <div class="site-name">The Fairgrounds</div>
-      <div class="site-sub">Nantucket Island <span style="color:var(--gold);">&bull;</span> Restaurant <span style="color:var(--gold);">&bull;</span> Events <span style="color:var(--gold);">&bull;</span> Community</div>
-    </div>
-
-    <svg class="swash" viewBox="0 0 200 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 10 Q25 0 50 10 Q75 20 100 10 Q125 0 150 10 Q175 20 200 10" stroke="#4e5420" stroke-width="1.5" fill="none"/>
-    </svg>
-
-    <a href="maplefest-2026.png" target="_blank" rel="noopener" class="flyer-frame">
-      <img
-        src="maplefest-2026.png"
-        alt="Maple Fest 2026 — Saturday, March 28th at The Fairgrounds, 27 Fairgrounds Road, Nantucket. Nanpuppets show, maple boil demo, face painting, balloon art, line dancing."
-        width="2825"
-        height="3575"
-        loading="eager"
-      >
-    </a>
-
-    <div class="info-bar">
-      <span>27 Fairgrounds Road</span>
-      <span class="dot">&bull;</span>
-      <span>Nantucket, MA</span>
-      <span class="dot">&bull;</span>
-      <span>Saturday, March 28</span>
-    </div>
-
-    <div class="cta-row">
-      <a href="https://jonathanprivat.github.io/the-faregrounds/" class="btn btn-primary">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-        View Menu
-      </a>
-      <a href="https://maps.google.com/?q=27+Fairgrounds+Road+Nantucket+MA" target="_blank" rel="noopener" class="btn btn-outline">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        Get Directions
-      </a>
-    </div>
-
-    <div class="footer">
-      <a href="https://jonathanprivat.github.io/the-faregrounds/">thefairgrounds.com</a>
-    </div>
-
-  </div>
-
-</body>
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
