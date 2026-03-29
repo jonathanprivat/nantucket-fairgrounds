@@ -4,19 +4,122 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Faregrounds | Nantucket Island</title>
-  <meta name="description" content="The Faregrounds — seasonal food, local gatherings, and fairground energy on Nantucket Island. 27 Fairgrounds Road." />
+  <meta name="description" content="The Faregrounds — seasonal food, local gatherings, and fairground energy on Nantucket Island. Coming soon to 27 Fairgrounds Road." />
   <link rel="icon" type="image/png" href="/images/whale.png" />
-  <meta name="theme-color" content="#4e5420" />
+  <meta name="theme-color" content="#4e5420" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)" />
   <meta property="og:title" content="The Faregrounds | Nantucket Island" />
-  <meta property="og:image" content="https://fairgroundsnantucket.com/images/maplefest.jpeg" />
+  <meta property="og:description" content="Seasonal food, local gatherings, and fairground energy. Coming soon." />
+  <meta property="og:image" content="https://fairgroundsnantucket.com/images/logo.png" />
   <meta property="og:url" content="https://fairgroundsnantucket.com/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: #ffed6c; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
-    img { max-width: 100%; max-height: 100vh; width: auto; height: auto; display: block; }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #faf8f2;
+      --text: #2a2a2a;
+      --text-muted: #6b6b6b;
+      --accent: #4e5420;
+      --line: #d4d0c8;
+      --logo-invert: 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1a1a;
+        --text: #e8e4dc;
+        --text-muted: #9a9690;
+        --accent: #b8c26a;
+        --line: #3a3a3a;
+        --logo-invert: 1;
+      }
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-weight: 300;
+      transition: background 0.3s, color 0.3s;
+      padding: 2rem;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.5rem;
+      max-width: 420px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 200px;
+      height: auto;
+      filter: invert(var(--logo-invert));
+      transition: filter 0.3s;
+    }
+
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: var(--line);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+
+    .address {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      line-height: 1.7;
+    }
+
+    .social a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      transition: color 0.2s;
+    }
+
+    .social a:hover {
+      color: var(--accent);
+    }
+
+    @media (max-width: 480px) {
+      .logo { width: 160px; }
+      h1 { font-size: 1.25rem; }
+    }
   </style>
 </head>
 <body>
-  <img src="/images/maplefest.jpeg" alt="The Faregrounds presents Maple Fest 2026 — Saturday, March 28th at 27 Fairgrounds Road, Nantucket" />
+  <div class="container">
+    <img src="/images/logo.png" alt="The Faregrounds" class="logo" />
+    <div class="divider"></div>
+    <h1>Coming Soon</h1>
+    <p class="address">
+      27 Fairgrounds Road<br />
+      Nantucket Island, MA
+    </p>
+    <div class="social">
+      <a href="https://www.instagram.com/nantucketfairgrounds" target="_blank" rel="noopener">@nantucketfairgrounds</a>
+    </div>
+  </div>
 </body>
 </html>
